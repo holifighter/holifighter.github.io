@@ -1,14 +1,10 @@
 //  Importing souud effect..!
 
-const introMusic = new Audio("./music/introSong.mp3");
 const shootingSound = new Audio("./music/shoooting.mp3");
 const killEnemySound = new Audio("./music/killEnemy.mp3");
 const gameOverSound = new Audio("./music/gameOver.mp3");
 const heavyWeaponSound = new Audio("./music/heavyWeapon.mp3");
 const hugeWeaponSound = new Audio("./music/hugeWeapon.mp3");
-
-// start music 
- introMusic.play(); 
 
 
 
@@ -37,9 +33,6 @@ const scoreBoard = document.querySelector(".scoreBoard");
 // EventListener for difficulty
 document.querySelector("input").addEventListener("click", (e) => {
   e.preventDefault();
-
-    // stoping music 
-    introMusic.pause();
   // making form invisible
   form.style.display = "none";
   // making scoreBoard visible
